@@ -242,23 +242,32 @@ input[type="checkbox"]{
   display: inline;
 }
 
-@media screen and (min-width: 470px) {
-	body, html {
-	min-height:100%;
+@media screen and (max-width: 960px) {
+	input{
+	background-color: #909090;
 	}
-  input[type="submit"], input[type="email"] {
-    font-size: 3.65vw;
-    width: 100%;
-      display: center;
-
-  }
-}
+	h1 {
+	font-size: 24px;
+  	padding-top: 10px;
+	margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+	}
+	label {
+	font-size: 8px;
+	text-align: left;
+	}
+	p {
+	margin-left: auto;
+        margin-right: auto;
+	}
+     }
 
      label + input[type="email"] {
-       display: inline;
+       display: center;
 }
 
-/* ===== MODULAR STYLES ===== */
+
 
 form li {
   padding: 0.6em;
@@ -285,7 +294,7 @@ p {
   border: 2px solid #828282;
   border-radius: 5px;
 }
-/* ===== STATE STYLES ======= */
+
 
 .hasjs #input-email {
   position: relative;
